@@ -38,7 +38,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className="w-full  bg-zinc-900">
+    <div className="w-full  bg-zinc-900 mt-8">
       <div className="max-w-screen-xl mx-auto text-center relative">
         <h1 className="select-none text-[30vw] font-medium leading-none tracking-tighter ">
           Work
