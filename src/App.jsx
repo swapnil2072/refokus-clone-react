@@ -4,6 +4,7 @@ import Work from "./components/Work";
 import Products from "./components/Products";
 import Marquees from "./components/Marquees";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Products />
       <Marquees />
       <Cards />
+      <Footer />
     </div>
   );
 };
