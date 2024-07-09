@@ -1,4 +1,17 @@
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
+
 const Work = () => {
+  const [images, setImages] = useState();
+
+  const {scrollProgress} = useSroll();
+
+  scrollYProgress.on("change",(data)=>{
+    function imagesShow(arr){
+      setImages((prev)=>prev.map(item,index)=>arr.indexOf(intdex) ==== -1?{...item,isActive:false}:{...item,isActive:true})
+    }
+  })
+
   var image = [
     {
       URL: "https://cdn.prod.website-files.com/6334198f239547d0f9cd84b3/634ef09178195ce0073e38f3_Refokus%20Tools-1.png",
