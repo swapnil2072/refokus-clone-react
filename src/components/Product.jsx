@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
 import Button from "./Button";
 
-const Product = ({ val }) => {
+const Product = ({ val, mover, count }) => {
   return (
-    <div className="w-full mt-10 py-20 text-white">
+    <div
+      onMouseOver={() => mover(count)}
+      className="w-full mt-10 py-20 h-[23rem] text-white"
+    >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
         <h1 className="text-6xl capitalize font-medium">{val.title}</h1>
         <div className="dets w-1/3">

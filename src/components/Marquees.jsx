@@ -24,9 +24,13 @@ const Marquees = () => {
     ],
   ];
   return (
-    <div className="mt-10 py-10">
+    <div className="mt-32 py-20 w-full relative overflow-hidden ">
       {images.map((item, index) => (
-        <Marquee key={index} imagesURLs={item} />
+        <Marquee
+          key={index}
+          direction={index === 0 ? "left" : "right"}
+          imagesURLs={item}
+        />
       ))}
     </div>
   );
